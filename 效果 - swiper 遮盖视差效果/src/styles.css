@@ -1,0 +1,18 @@
+.swiper-container {
+  height: 400px;
+  width: 800px;
+  margin: 100px auto;
+}
+/* required */
+.swiper-slide {
+  overflow: hidden;
+}
+.pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
