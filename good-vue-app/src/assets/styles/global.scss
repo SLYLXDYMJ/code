@@ -1,0 +1,14 @@
+// css reset
+body {
+  margin: 0;
+}
+
+// 让网页默认滚动条不滚动
+body, html {
+  overflow: hidden;
+}
+
+// 让 element messageBox 适配手机
+.el-message-box {
+  max-width: 90%;
+}
