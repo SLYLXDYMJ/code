@@ -21,7 +21,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style>
   .comp-root {
     box-sizing: border-box;
     height: 100vh;
