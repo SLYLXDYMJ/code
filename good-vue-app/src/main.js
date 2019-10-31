@@ -8,7 +8,6 @@ import router from './router'
 
 // 逐个引入
 import Root from './components/root'
-
 import './plugins/element'
 import './plugins/message-box'
 import './plugins/vue-navigation'
