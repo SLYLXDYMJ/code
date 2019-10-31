@@ -1,0 +1,45 @@
+/* css reset */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 100%;
+}
+
+/* album */
+.album {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+.album-item {
+  position: relative;
+  flex-grow: 1;
+  margin: 5px;
+}
+.album-item-img {
+  visibility: hidden;
+  max-width: 100%;
+  height: 200px;
+  /* IE10 兼容性 */
+  /* 若 img 标签 为 js 动态加入到页面的 */
+  /* IE10 以下会给 img 标签自动附上 width 和 height 属性 */
+  /* 造成宽度默认不跟着高度缩放 */
+  /* 这里设置下 width: auto 就好了 */
+  width: auto;
+}
+.album-item-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+}
