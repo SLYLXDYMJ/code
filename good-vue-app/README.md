@@ -1,6 +1,7 @@
-!(demo - codesandbox)[https://codesandbox.io/s/github/q-jason/code/tree/master/good-vue-app]
-
 > 本例推荐在手机下看，若为电脑端可将游览器后退键作为手机 back 物理按键
+
+## 在线 demo
+> [demo - codesandbox](https://codesandbox.io/s/github/q-jason/code/tree/master/good-vue-app)
 
 ## 各大原生 app 的启发
 - 启动的第一个页面通常是首页（导航页面）
