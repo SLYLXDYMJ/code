@@ -11,8 +11,7 @@
     "element-ui": "^2.4.5",
     "vue": "^2.5.22",
     "vue-navigation": "^1.1.4",
-    "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vue-router": "^3.0.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "3.6.0",
