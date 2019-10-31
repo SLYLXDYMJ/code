@@ -3,8 +3,18 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import './components'
-import './plugins'
+// codesandbox 会报错
+// import './components'
+// import './plugins'
+
+// 逐个引入
+import Root from './components/root'
+
+import './plugins/element'
+import './plugins/message-box'
+import './plugins/vue-navigation'
+
+Vue.component(Root.name, Root)
 
 Vue.config.productionTip = false
 
