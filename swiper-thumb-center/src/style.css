@@ -5,24 +5,60 @@
 }
 
 .body {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .group {
+  width: 50%;
+  padding: 30px;
 }
-.title {
+
+.group-title {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
+  font-size: 20px;
 }
-.swiper-body, .swiper-thumb {
-  width: 800px;
-  margin: 0 auto;
-  height: 500px;
+
+.group-body {
+  display: flex;
+  justify-content: center;
 }
-.swiper-body {
-  margin-bottom: 20px;
+.group-body-left {
+  margin-right: 15px;
 }
-.swiper-thumb {
+.group-body-right {
+}
+
+/* swiper 相关的需要定义的宽和高 */
+.group.x .group-body-left,
+.group.x .group-body-right {
+  height: 300px;
+}
+.group.y .group-body-left,
+.group.y .group-body-right {
   height: 200px;
 }
+.swiper-body, .swiper-thumb.x {
+  width: 300px;
+}
+.group.x .swiper-body {
+  height: 70%;
+}
+.group.y .swiper-body {
+  height: 100%;
+}
+.group.x .swiper-thumb.x {
+  height: 30%;
+  padding-top: 15px;
+}
+.group.y .swiper-thumb.y {
+  width: 100px;
+  height: 100%;
+}
+
+/* slide 颜色 */
 .swiper-slide:nth-child(1) {
   background-color: #ff8d4b;
 }
