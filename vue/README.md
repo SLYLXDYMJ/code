@@ -1,10 +1,10 @@
 ## vue 相关开发经验
 
 ### 自动化全局注册所有组件
-> 主要作用：减少重复引用的代码量
+> 主要作用：减少重复引用的代码量 <br/>
 > 关键代码：src/components/index.js
 
-1. 复制代码到 src/components/index.js
+1. 复制关键代码到 src/components/index.js
 2. 组件已文件夹的形式存放于 src/components 中
 3. 设置组件 name 属性，作为标签名
 4. npm i --save lodash
@@ -12,16 +12,16 @@
 6. 无需引入注册，在页面中直接调用组件即可
 
 ### 优雅的插件配置
-> 主要作用：增加可维护性
+> 主要作用：增加可维护性 <br/>
 > 关键代码：src/plugins/index.js
 
 1. 新建 src/plugins 目录
-2. 复制 src/plugins/index.js 到 plugins 目录
+2. 复制关键代码到 src/plugins/index.js
 3. 创建插件配置文件于 plugins 目录下，建议已具体功能分组
 4. 在 main.js 中引入 plugins/index.js
 
 ### 多页面项目自动化配置
-> 作用：优化开发体验，省去配置 vue.config.js 的时间
+> 作用：优化开发体验，省去配置 vue.config.js 的时间 <br/>
 > 代码：vue.config.js，pages 属性部分
 
 1. 复制 vue.config.js pages 属性部分

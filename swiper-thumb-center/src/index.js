@@ -5,6 +5,68 @@ import 'swiper/css/swiper.min.css'
 
 /**
  *  效果：
+ *    最终方案，永远在中心的缩略图
+ *  备注：
+ *    基于 swiper@5.20 新属性实现 (centeredSlidesBounds)
+ *  缺点：
+ *    暂无
+ **/
+!(function () {
+  // .group-01
+  !(function () {
+    let thumbSwiper = new Swiper('.group-01 .swiper-thumb', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      centeredSlides: true,
+      slideToClickedSlide: true,
+      resistanceRatio: 0,
+      // grabCursor: true,
+      // 关键属性
+      centeredSlidesBounds: true
+    })
+    let bodySwiper = new Swiper('.group-01 .swiper-body', {
+      // grabCursor: true,
+      // resistanceRatio: 0,
+      thumbs: {
+        swiper: thumbSwiper
+      },
+      on: {
+        transitionStart () {
+          thumbSwiper.slideTo(this.realIndex)
+        }
+      }
+    })
+  })()
+  // .group-02
+  !(function () {
+    let thumbSwiper = new Swiper('.group-02 .swiper-thumb', {
+      direction: 'vertical',
+      spaceBetween: 10,
+      slidesPerView: 4,
+      centeredSlides: true,
+      slideToClickedSlide: true,
+      resistanceRatio: 0,
+      // grabCursor: true,
+      centeredSlidesBounds: true
+    })
+    let bodySwiper = new Swiper('.group-02 .swiper-body', {
+      direction: 'vertical',
+      // grabCursor: true,
+      // resistanceRatio: 0,
+      thumbs: {
+        swiper: thumbSwiper
+      },
+      on: {
+        transitionStart () {
+          thumbSwiper.slideTo(this.realIndex)
+        }
+      }
+    })
+  })()
+})()
+
+/**
+ *  效果：
  *    永远在中心的缩略图
  *  备注：
  *    基于 swiper 缩略图配置实现，兼容性很好

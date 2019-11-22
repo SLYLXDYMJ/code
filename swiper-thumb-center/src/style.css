@@ -10,6 +10,13 @@
   display: flex;
   flex-wrap: wrap;
 }
+.hint {
+  background-color: #F5F5F5;
+  border-left: 3px solid #3F51B5;
+  padding: 16px 20px;
+  font-size: 14px;
+  width: 100%;
+}
 .group {
   width: 50%;
   padding: 30px;
