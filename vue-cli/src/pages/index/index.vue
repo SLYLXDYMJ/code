@@ -7,10 +7,7 @@
 
 <script>
   export default {
-    name: 'page-index',
-    created () {
-      console.log(this.$test)
-    }
+    name: 'page-index'
   }
 </script>
 
