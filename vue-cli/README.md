@@ -33,20 +33,20 @@
 注意 pages 下若无文件会报错
 
 ### vuex
-> 核心作用：使用方便，省去引用时间
-> 关键代码：src/plugins/mixin-store-to-components.js
+> 核心作用：使用方便，省去引用时间 <br/>
+> 关键代码：src/plugins/mixin-store-to-components.js <br/>
 > 非关键代码：src/store/index.js
 
 1. Vue.mixin 的方式引入所有的 state，getters，actions，mutations
 2. 在组件中使用 this.xxx 的方式取值，或调用
 
 #### 单页面项目注意
-> 当前项目是配置的多页面标准
+> 当前项目是配置的多页面标准 <br/>
 > 单页面项目无需参考，使用 "抽象插件层统一管理" 或 直接引用 "关键代码" 即可
 
 #### 多页面项目注意
-> 默认模拟开发时使用了 vuex，若没有使用
-> 则在 vue.config.js 的 pages 属性中删除 store 相应配置即可
+> 默认模拟开发时使用了 vuex，若没有使用 <br/>
+> 则在 vue.config.js 的 pages 属性中删除 store 相应配置即可 <br/>
 > 如下
 
 ```javascript
