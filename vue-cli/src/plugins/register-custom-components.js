@@ -1,5 +1,5 @@
 /**
- *  全局化自定义组件
+ *  将 components 下的组件动态注册到全局
  *  @requires lodash
  **/
 import Vue from 'vue'
