@@ -47,16 +47,14 @@
 > 如下，加入 vuex 即可
 
 ```javascript
-const entryData = `
-  import Vue from 'vue';
-  import App from '${ appTpl }';
-  import store from '../src/store'
-  
-  // 这里若修改了配置变量，则需要注意路径正确
-  import '.${ MAIN_PATH }'
-  
-  Vue.config.productionTip = false;
-  
-  new Vue({ store, render: h => h(App) }).$mount('#app');
-`
+import Vue from 'vue';
+import App from '${ appTpl }';
+import store from '../src/store'
+
+// 这里若修改了配置变量，则需要注意路径正确
+import '.${ MAIN_PATH }'
+
+Vue.config.productionTip = false;
+
+new Vue({ store, render: h => h(App) }).$mount('#app');
 ```
