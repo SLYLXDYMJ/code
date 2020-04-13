@@ -42,8 +42,8 @@
 3. 每次创建或删除 pages 下的页面目录，都最好重新启动下项目
 
 ### 多页面项目 vuex 配置
-> 单页面自行配置即可，很简单
-> 多页面修改 vue.config.js pages 中 entryData
+> 单页面自行配置即可，很简单 <br/>
+> 多页面修改 vue.config.js pages 中 entryData <br/>
 > 如下，加入 vuex 即可
 
 ```javascript
